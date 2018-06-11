@@ -4,7 +4,27 @@
     <script src="worker.js"></script>
 </head>
 <body>
-
+<p>
+    Example Usage
+</p>
+<p>
+    <code>
+        <pre>
+        &lt;script type="text/javascript"&gt;
+            wjs.addTask("add", () => {
+                let x = 2;
+            let y = 3;
+            return x+y;
+            }, (data) => {
+                console.warn("RESULT ", data);
+            });
+        &lt;/script&gt;
+        </pre>
+    </code>
+</p>
+<p>
+    Check console for demo output
+</p>
 </body>
 <script type="text/javascript">
     wjs.addTask("add", () => {
